@@ -1,0 +1,959 @@
+@media screen and (min-width: 1025px) {
+
+    @font-face {
+        font-family: 'FontBold';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Md.otf);
+    }
+
+    @font-face {
+        font-family: 'FontSimple';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Lt.otf);
+    }
+
+    @font-face {
+        font-family: 'FontAlt';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Bk.otf);
+    }
+
+    body {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none black
+    }
+
+    a:visited {
+        text-decoration: none black
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+        margin-left: 2%;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .container1 {
+        margin-top: 5%;
+    }
+
+    .container1 .container2 {
+        margin-top: 5%;
+    }
+
+    .container3 {
+        margin-bottom: 5%;
+    }
+
+    .medal {
+        width: 48px;
+        height: 48px;
+        display: block;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        font-family: 'FontBold';
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        font-family: 'FontSimple';
+    }
+
+    h3 {
+        font-size: 25px;
+        text-align: left;
+        font-family: 'FontBold';
+    }
+
+    h4 {
+        font-size: 20px;
+        text-align: left;
+        font-family: 'FontSimple';
+    }
+
+    h5 {
+        font-size: 18px;
+        text-align: left;
+        font-family: 'FontAlt';
+        color: black;
+        text-decoration: underline;
+        margin-right: 5%;
+    }
+
+    .line {
+        display: block;
+        border-top: 2px solid black;
+        width: 60px;
+        position: relative;
+        left: 45%;
+        margin-top: 5%;
+    }
+
+    .line2 {
+        display: block;
+        border-top: 2px solid black;
+        width: 60px;
+        position: relative;
+        left: 48%;
+        margin-top: 5%;
+    }
+
+    .line_gray {
+        display: flex;
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        width: 110%;
+        margin-top: 30px;
+        margin-bottom: 10%;
+    }
+
+    .line_gray_mobile {
+        display: none;
+    }
+
+    .check_your_progress {
+        font-family: 'FontAlt';
+        font-size: 15px;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .check_your_progress:hover {
+        background-color: rgba(128, 128, 128, 0.100);
+    }
+
+    .img1 {
+        margin: 5%;
+        border-radius: 10px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .paragraphs {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .paragraph_icons {
+        width: 50px;
+    }
+
+    .paragraph1,
+    .paragraph2,
+    .paragraph3,
+    .paragraph4 {
+        width: 25vw;
+    }
+
+    .paragraphs2 {
+        margin-left: 6%;
+        margin-right: 6%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    .paragraph2_1,
+    .paragraph2_2,
+    .paragraph2_3,
+    .paragraph2_4 {
+        width: 40vw;
+        margin-bottom: 10%;
+    }
+
+    .questions {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        margin: 5%;
+    }
+
+    .get_advice_from_superhosts {
+        position: relative;
+    }
+
+    .get_advice_from_superhosts img {
+        object-fit: cover;
+        width: 100%;
+        height: 700px;
+    }
+
+    .text_and_button {
+        position: absolute;
+        top: 30%;
+        margin-left: 5%;
+    }
+
+    .visit_comunity_center {
+        margin-top: 5%;
+        font-family: 'FontAlt';
+        font-size: 17px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid black;
+        width: 270px;
+        height: 50px;
+    }
+
+    h6 {
+        font-size: 50px;
+        font-family: 'FontSimple';
+        color: white;
+        margin: 0;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table_parent_tablet {
+        display: none;
+    }
+
+    .table_parent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 3%;
+        margin-left: 6%;
+        margin-right: 14%;
+    }
+
+    table {
+        font-family: 'FontAlt';
+        text-align: left;
+    }
+
+    td {
+        padding-top: 7%;
+        font-size: 13px;
+    }
+
+    .footer_parent_mobile {
+        display: none;
+    }
+
+    .footer_parent {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.300);
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+
+    .footer_left_side {
+        font-family: 'FontAlt';
+    }
+
+    ul li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .list:before {
+        content: "• ";
+    }
+
+    .language_currency {
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .language_currency_text {
+        font-family: 'FontAlt';
+        display: inline;
+        padding-right: 15px;
+        font: bold;
+    }
+
+    .language_icon {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .socials {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .socials_img {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+
+
+
+/* !!! TABLET VERSION !!! */
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    @font-face {
+        font-family: 'FontBold';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Md.otf);
+    }
+
+    @font-face {
+        font-family: 'FontSimple';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Lt.otf);
+    }
+
+    @font-face {
+        font-family: 'FontAlt';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Bk.otf);
+    }
+
+    body {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none black
+    }
+
+    a:visited {
+        text-decoration: none black
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+        margin-left: 2%;
+    }
+
+    .container1,
+    .container2,
+    .container3 {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .container1 {
+        margin-top: 4%;
+    }
+
+    .medal {
+        width: 48px;
+        height: 48px;
+        display: block;
+        margin: auto;
+        margin-bottom: -3%;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'FontBold';
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'FontSimple';
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: left;
+        font-family: 'FontBold';
+    }
+
+    h4 {
+        font-size: 15px;
+        text-align: left;
+        font-family: 'FontSimple';
+    }
+
+    h5 {
+        font-size: 15px;
+        text-align: left;
+        font-family: 'FontAlt';
+        color: black;
+        text-decoration: underline;
+        margin-right: 5%;
+    }
+
+    .line {
+        display: block;
+        border-top: 2px solid black;
+        width: 60px;
+        position: relative;
+        left: 45%;
+        margin-top: 5%;
+    }
+
+    .line2 {
+        display: block;
+        border-top: 2px solid black;
+        width: 60px;
+        position: relative;
+        left: 48%;
+        margin-top: 5%;
+    }
+
+    .line_gray {
+        display: flex;
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        width: 110%;
+        margin-top: 30px;
+        margin-bottom: 10%;
+    }
+
+    .line_gray_mobile {
+        display: block;
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .check_your_progress {
+        font-family: 'FontAlt';
+        font-size: 15px;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    .check_your_progress:hover {
+        background-color: rgba(128, 128, 128, 0.100);
+    }
+
+    .img1 {
+        margin: 5%;
+        margin-top: 0;
+        margin-bottom: 10%;
+        border-radius: 10px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .paragraphs {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10%;
+    }
+
+    .paragraph_icons {
+        width: 50px;
+    }
+
+    .paragraph1,
+    .paragraph2,
+    .paragraph3,
+    .paragraph4 {
+        width: 25vw;
+    }
+
+    .paragraphs2 {
+        margin-left: 4%;
+        margin-right: 4%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    .paragraph2_1,
+    .paragraph2_2,
+    .paragraph2_3,
+    .paragraph2_4 {
+        width: 40vw;
+        margin-bottom: 10%;
+    }
+
+    .questions {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        margin: 5%;
+    }
+
+    .get_advice_from_superhosts {
+        position: relative;
+    }
+
+    .get_advice_from_superhosts img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+
+    .text_and_button {
+        position: absolute;
+        top: 30%;
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .visit_comunity_center {
+        margin-top: 5%;
+        font-family: 'FontAlt';
+        font-size: 17px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid black;
+        width: 270px;
+        height: 50px;
+    }
+
+    h6 {
+        font-size: 50px;
+        font-family: 'FontSimple';
+        color: white;
+        margin: 0;
+    }
+
+    .sitemap_text {
+        font-size: 15px;
+        text-align: left;
+        font-family: 'FontAlt';
+        color: black;
+    }
+
+    .table_parent_tablet {
+        margin-top: 2%;
+        display: table;
+    }
+
+    .table_parent {
+        display: none;
+    }
+
+    table {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: 'FontAlt';
+        text-align: left;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th {
+        padding: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    td {
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+        width: 33.33%;
+    }
+
+    .footer_parent {
+        display: none;
+    }
+
+    .footer_parent_mobile {
+        font-size: 15px;
+        margin: auto;
+        margin-top: -2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer_left_side {
+        font-family: 'FontAlt';
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    .language_currency {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .socials_img {
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .list:before {
+        content: "• ";
+        padding: 10px;
+    }
+
+    .list:nth-child(3)::before {
+        content: none;
+        padding: 10px;
+    }
+
+
+    .language_currency_text {
+        font-family: 'FontAlt';
+        display: inline;
+        padding-right: 5%;
+        font: bold;
+    }
+
+    .language_icon {
+        width: 20px;
+        height: 20px;
+        margin-top: 50%;
+        margin-right: 10px;
+    }
+
+
+}
+
+
+
+
+
+/* !!! MOBILE VERSION !!! */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    @font-face {
+        font-family: 'FontBold';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Md.otf);
+    }
+
+    @font-face {
+        font-family: 'FontSimple';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Lt.otf);
+    }
+
+    @font-face {
+        font-family: 'FontAlt';
+        src: url(../../../../assets/images/superhost_page/AirbnbCereal_W_Bk.otf);
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 100px;
+        margin-left: 3%;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .medal {
+        width: 48px;
+        height: 48px;
+        margin-top: 5%;
+    }
+
+    h1 {
+
+        font-size: 35px;
+        text-align: left;
+        font-family: 'FontBold';
+
+    }
+
+    h2 {
+        word-spacing: 2px;
+        font-size: 20px;
+        text-align: left;
+        font-family: 'FontSimple';
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: left;
+        font-family: 'FontBold';
+
+    }
+
+    h4 {
+        font-size: 15px;
+        text-align: left;
+        font-family: 'FontSimple';
+    }
+
+    h5 {
+        text-align: left;
+        font-size: 15px;
+        font-family: 'FontAlt';
+        color: black;
+        text-decoration: underline;
+    }
+
+    .line,
+    .line2 {
+        display: block;
+        border-top: 2px solid black;
+        width: 60px;
+        margin-top: 80px;
+    }
+
+    .line_gray {
+        display: flex;
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .check_your_progress {
+        font-family: 'FontAlt';
+        font-size: 15px;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 7%;
+    }
+
+    .check_your_progress:hover {
+        background-color: rgba(128, 128, 128, 0.100);
+    }
+
+    .img1 {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        width: 95%;
+        height: 70%;
+    }
+
+    .paragraph_icons {
+        width: 45px;
+        margin-top: 5%;
+    }
+
+    .paragraph1,
+    .paragraph2,
+    .paragraph3,
+    .paragraph4 {
+        margin: 25px;
+    }
+
+    .paragraphs2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+
+    .questions {
+        padding-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+    .get_advice_from_superhosts {
+        position: relative;
+    }
+
+    .get_advice_from_superhosts img {
+        object-fit: cover;
+        object-position: 60%;
+        width: 100%;
+        height: 600px;
+    }
+
+    .text_and_button {
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+    }
+
+    .visit_comunity_center {
+        margin-top: 5%;
+        font-family: 'FontAlt';
+        font-size: 17px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid black;
+        width: 250px;
+        height: 35px;
+    }
+
+    h6 {
+        font-size: 40px;
+        font-family: 'FontSimple';
+        color: white;
+        margin: 0;
+    }
+
+    .table_parent_tablet {
+        display: none;
+    }
+
+    .table_parent {
+        margin-top: 10%;
+    }
+
+    table {
+        max-width: 80%;
+        font-family: 'FontAlt';
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .line_gray_mobile {
+        border-top: 1px solid rgba(128, 128, 128, 0.308);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 85%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    td,
+    th {
+        font-size: 15px;
+        padding-bottom: 5%;
+    }
+
+    td {
+        width: 25%;
+        min-width: 150px;
+    }
+
+    .footer_parent {
+        display: none;
+    }
+
+    .footer_parent_mobile {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 5%;
+    }
+
+    .footer_left_side {
+        font-family: 'FontAlt';
+        font-size: 13px;
+        margin-left: -5%;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .list:before {
+        content: "• ";
+        padding: 10px;
+    }
+
+    .list:nth-child(3)::before {
+        content: none;
+        padding: 10px;
+    }
+
+    .language_currency_text {
+        font-family: 'FontAlt';
+        font-size: 13px;
+        display: inline;
+        padding-right: 5%;
+        font: bold;
+    }
+
+    .language_icon {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        margin-right: 2%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+}
