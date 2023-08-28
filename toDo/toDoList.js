@@ -1,4 +1,3 @@
-
 // ADDING TASK
 
 const taskTitle = document.getElementById('taskTitle');
@@ -166,3 +165,24 @@ listsContainer.addEventListener('click', function (event) {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const todoTasks = localStorage.getItem('todoTasks');
+    const doneTasks = localStorage.getItem('doneTasks');
+
+    if (todoTasks) {
+        todoList.innerHTML = todoTasks;
+    }
+
+    if (doneTasks) {
+        doneList.innerHTML = doneTasks;
+        checkAllDoneCheckboxes();
+    }
+});
+
+function checkAllDoneCheckboxes() {
+    const doneCheckboxes = doneList.querySelectorAll('.done-task input[type="checkbox"]');
+    doneCheckboxes.forEach(checkbox => {
+        checkbox.checked = true;
+    });
+}
