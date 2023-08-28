@@ -119,7 +119,7 @@ clearButton.addEventListener('click', function () {
     clearSearchResults();
 });
 
-// LOCAL STORAGE:
+// SAVING TO LOCAL STORAGE:
 
 document.addEventListener('DOMContentLoaded', function () {
     const todoTasks = localStorage.getItem('todoTasks');
