@@ -1,0 +1,129 @@
+.task-management {
+    display: flex;
+    height: 25vh;
+}
+
+.add-a-task {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.find-a-task {
+    flex: 1;
+    background-color: lightblue;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+input,
+button {
+    margin: 5px;
+}
+
+.todo-app {
+    display: flex;
+    align-items: top;
+}
+
+.todo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    padding: 20px;
+    background-color: lightcoral;
+    border: red 2px solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.done-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    padding: 20px;
+    background-color: lightgreen;
+    border: green 2px solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.task-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.to-do-task {
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.to-do-task input[type="checkbox"] {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.to-do-task p {
+    margin-left: 10px;
+}
+
+.trash {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+
+.done-task {
+    background-color: darkgreen;
+    color: white;
+    text-decoration: line-through;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.done-task input[type="checkbox"] {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.done-task p {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+}
