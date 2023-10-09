@@ -1,0 +1,101 @@
+html {
+    background-color: rgb(210, 210, 198);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-size: 15px;
+    margin: 10px;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(228, 228, 222);
+    color: black
+}
+
+input:hover {
+    background-color: beige;
+}
+
+::placeholder {
+    color: rgb(99, 99, 99);
+}
+
+p {
+    font-size: 15px;
+    display: none;
+    margin: 0;
+    color: rgb(160, 0, 0);
+    text-align: center;
+    margin: 0;
+}
+
+.succesful {
+    font-size: 15px;
+    display: none;
+    margin: 0;
+    color: rgb(0, 188, 0);
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(99, 99, 99);
+    text-align: center;
+}
+
+.register-form,
+.login-form,
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+    background-color: lightslategray;
+    border: 10px grey solid;
+    border-radius: 10px;
+}
+
+button {
+    margin: 20px;
+    padding: 5px;
+    width: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(228, 228, 222);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: beige;
+}
+
+a {
+    color: rgb(62, 61, 61);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.reset {
+    display: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

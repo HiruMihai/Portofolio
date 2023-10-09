@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift builder</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <script src="./homepage.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="left">
+            <h2>Shift builder</h2>
+            <button id="myShifts">My shifts</button>
+            <button><a href="../edit/edit.html">Edit profile</a></button>
+            <button id="createShiftBtn">+</button>
+        </div>
+        <div class="right">
+            <h2>Hello</h2>
+            <h2 id="username"></h2>
+            <button id="logout">Logout</button>
+        </div>
+    </nav>
+
+    <div class="search" id="searchField">
+        <label for="shiftNameSearch">Shift unique name:</label>
+        <input type="text" name="shiftNameSearch" id="shiftNameSearch">
+        <label for="fromDateSearch">From date:</label>
+        <input type="date" name="fromDateSearch" id="fromDateSearch">
+        <label for="toDateSearch">To date:</label>
+        <input type="date" name="toDateSearch" id="toDateSearch">
+        <button id="search">Search</button>
+        <button id="clear">Clear</button>
+    </div>
+
+
+    <table class="shift-table" id="shiftTable">
+        <div id="loading-animation" class="loading-animation"></div>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Start time</th>
+                <th>End time</th>
+                <th>Hourly wage</th>
+                <th>Workplace</th>
+                <th>Profit</th>
+            </tr>
+        </thead>
+        <tbody id="shiftTableBody"></tbody>
+        <tfoot>
+            <tr>
+                <th>Best Month</th>
+                <th colspan="2" id="bestMonth"></th>
+                <th colspan="3" id="bestMonthProfit"></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="create-shift" id="createShiftPage">
+        <p class="errors" id="errors"></p>
+        <button class="create-shift-close" id="closeCreateShift">X</button>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required>
+        <label for="start_time">Start time:</label>
+        <input type="time" name="start_time" id="start_time" required>
+        <label for="end_time">End time:</label>
+        <input type="time" name="end_time" id="end_time" required>
+        <label for="wage">Hourly wage:</label>
+        <input type="text" name="wage" id="wage" required>
+        <label for="workplace">Workplace:</label>
+        <select id="workplace" name="workplace" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+        <label for="name">Unique name:</label>
+        <input type="text" name="name" id="name">
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <button id="save">Save</button>
+    </div>
+
+    <div class="edit-shift" id="editShiftPage">
+        <h2 id="shiftUniqueName"></h2>
+        <p class="errors" id="errors"></p>
+        <button class="edit-shift-close" id="closeEditShift">X</button>
+        <label for="date-edit">Date:</label>
+        <input type="date" name="date-edit" id="date-edit" required>
+        <label for="start_time_edit">Start time:</label>
+        <input type="time" name="start_time_edit" id="start_time_edit" required>
+        <label for="end_time_edit">End time:</label>
+        <input type="time" name="end_time_edit" id="end_time_edit" required>
+        <label for="wage_edit">Hourly wage:</label>
+        <input type="text" name="wage_edit" id="wage_edit" required>
+        <label for="workplace_edit">Workplace:</label>
+        <select id="workplace_edit" name="workplace_edit" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+        <input type="text" name="name_edit" id="name_edit">
+        <label for="comments_edit">Comments:</label>
+        <textarea name="comments_edit" id="comments_edit" cols="30" rows="10"></textarea>
+        <button id="update">Update</button>
+    </div>
+    <footer>
+        <h3>made by Mihai Hiru</h3>
+    </footer>
+</body>
+
+</html>
