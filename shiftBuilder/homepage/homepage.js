@@ -184,43 +184,43 @@ function editShift(shiftData) {
 }
 
 function updateShift() {
-        let currentUser = getCurrentUser();
-        let editedDate = document.getElementById("date-edit").value;
-        let editedStartTime = document.getElementById("start_time_edit").value;
-        let editedEndTime = document.getElementById("end_time_edit").value;
-        let editedHourlyWage = document.getElementById("wage_edit").value;
-        let editedWorkplace = document.getElementById("workplace_edit").value;
-        let editedUniqueName = document.getElementById("name_edit").value;
-        let editedComments = document.getElementById("comments_edit").value;
-        const shiftIndex = (currentUser.shifts || []).findIndex(
-            (shift) => shift.uniqueName === editedUniqueName
-        );
-        if (shiftIndex !== -1) {
-            currentUser.shifts[shiftIndex] = {
-                date: editedDate,
-                startTime: editedStartTime,
-                endTime: editedEndTime,
-                hourlyWage: editedHourlyWage,
-                workplace: editedWorkplace,
-                uniqueName: editedUniqueName,
-                comments: editedComments,
-            };
-            const editedProfit = calculateProfit(currentUser.shifts[shiftIndex]);
-            const shiftTable = document.getElementById("shiftTable");
-            const rowToUpdate = shiftTable.rows[shiftIndex + 1];
-            rowToUpdate.cells[0].textContent = editedDate;
-            rowToUpdate.cells[1].textContent = editedStartTime;
-            rowToUpdate.cells[2].textContent = editedEndTime;
-            rowToUpdate.cells[3].textContent = editedHourlyWage;
-            rowToUpdate.cells[4].textContent = editedWorkplace;
-            rowToUpdate.cells[5].textContent = editedProfit.toFixed(2);
-            const userData = JSON.parse(localStorage.getItem("userData")) || {};
-            userData[currentUser.email] = currentUser;
-            localStorage.setItem("userData", JSON.stringify(userData));
-            calculateBestMonthProfit(currentUser.shifts);
-            document.getElementById("editShiftPage").style.display = "none";
-        }
+    let currentUser = getCurrentUser();
+    let editedDate = document.getElementById("date-edit").value;
+    let editedStartTime = document.getElementById("start_time_edit").value;
+    let editedEndTime = document.getElementById("end_time_edit").value;
+    let editedHourlyWage = document.getElementById("wage_edit").value;
+    let editedWorkplace = document.getElementById("workplace_edit").value;
+    let editedUniqueName = document.getElementById("name_edit").value;
+    let editedComments = document.getElementById("comments_edit").value;
+    const shiftIndex = (currentUser.shifts || []).findIndex(
+        (shift) => shift.uniqueName === editedUniqueName
+    );
+    if (shiftIndex !== -1) {
+        currentUser.shifts[shiftIndex] = {
+            date: editedDate,
+            startTime: editedStartTime,
+            endTime: editedEndTime,
+            hourlyWage: editedHourlyWage,
+            workplace: editedWorkplace,
+            uniqueName: editedUniqueName,
+            comments: editedComments,
+        };
+        const editedProfit = calculateProfit(currentUser.shifts[shiftIndex]);
+        const shiftTable = document.getElementById("shiftTable");
+        const rowToUpdate = shiftTable.rows[shiftIndex + 1];
+        rowToUpdate.cells[0].textContent = editedDate;
+        rowToUpdate.cells[1].textContent = editedStartTime;
+        rowToUpdate.cells[2].textContent = editedEndTime;
+        rowToUpdate.cells[3].textContent = editedHourlyWage;
+        rowToUpdate.cells[4].textContent = editedWorkplace;
+        rowToUpdate.cells[5].textContent = editedProfit.toFixed(2);
+        const userData = JSON.parse(localStorage.getItem("userData")) || {};
+        userData[currentUser.email] = currentUser;
+        localStorage.setItem("userData", JSON.stringify(userData));
+        calculateBestMonthProfit(currentUser.shifts);
+        document.getElementById("editShiftPage").style.display = "none";
     }
+}
 
 function loadShifts() {
     const currentUser = getCurrentUser();
@@ -342,4 +342,12 @@ const userData = JSON.parse(localStorage.getItem("userData")) || {};
 loggedInUserEmail && userData[loggedInUserEmail]
 const username = userData[loggedInUserEmail].username;
 document.getElementById("username").textContent = username;
+document.getElementById("delUpdate").addEventListener("click", deleteShiftAndUpdate);
+
+function deleteShiftAndUpdate() {
+    const editedUniqueName = document.getElementById("name_edit").value;
+    deleteShift(editedUniqueName);
+    const editShiftPage = document.getElementById("editShiftPage");
+    editShiftPage.style.display = "none";
+}
 

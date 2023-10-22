@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shift builder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="./homepage.css">
     <script src="./homepage.js" defer></script>
 </head>
@@ -27,7 +28,7 @@
 
     <div class="search" id="searchField">
         <label for="shiftNameSearch">Shift unique name:</label>
-        <input type="text" name="shiftNameSearch" id="shiftNameSearch">
+        <input type="text" name="shiftNameSearch" id="shiftNameSearch" placeholder="...">
         <label for="fromDateSearch">From date:</label>
         <input type="date" name="fromDateSearch" id="fromDateSearch">
         <label for="toDateSearch">To date:</label>
@@ -36,11 +37,10 @@
         <button id="clear">Clear</button>
     </div>
 
-
     <table class="shift-table" id="shiftTable">
         <div id="loading-animation" class="loading-animation"></div>
         <thead>
-            <tr>
+            <tr class="table-header">
                 <th>Date</th>
                 <th>Start time</th>
                 <th>End time</th>
@@ -51,7 +51,7 @@
         </thead>
         <tbody id="shiftTableBody"></tbody>
         <tfoot>
-            <tr>
+            <tr class="table-header" class="display-month">
                 <th>Best Month</th>
                 <th colspan="2" id="bestMonth"></th>
                 <th colspan="3" id="bestMonthProfit"></th>
@@ -107,6 +107,7 @@
         <label for="comments_edit">Comments:</label>
         <textarea name="comments_edit" id="comments_edit" cols="30" rows="10"></textarea>
         <button id="update">Update</button>
+        <button class="del-update" id="delUpdate">Delete</button>
     </div>
     <footer>
         <h3>made by Mihai Hiru</h3>
