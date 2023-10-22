@@ -274,7 +274,7 @@ function validateForm() {
 function toggleLoadingAnimationAndTable(showAnimation) {
     const loadingAnimation = document.getElementById("loading-animation");
     const table = document.getElementById("shiftTable");
-    const searchField = document.getElementById("searchField");
+    const searchField = document.getElementById("searchToggle");
     if (showAnimation) {
         table.style.display = "none";
         searchField.style.display = "none";
@@ -291,6 +291,22 @@ function toggleLoadingAnimationAndTable(showAnimation) {
     }
 }
 
+function toggleSearchField() {
+    const searchButton = document.getElementById("searchToggle");
+    const searchField = document.getElementById("searchField");
+
+    if (searchField.style.display === "none" || searchField.style.display === "") {
+        searchField.style.display = "flex";
+        searchButton.style.display = "none"
+    } else {
+        searchField.style.display = "none";
+        searchButton.style.display = "flex"
+    }
+}
+
+
+document.getElementById("searchToggle").addEventListener("click", toggleSearchField);
+document.getElementById("searchClose").addEventListener("click", toggleSearchField);
 document.getElementById("search").addEventListener("click", searchShifts);
 document.getElementById("clear").addEventListener("click", clearSearch);
 window.addEventListener("load", loadShifts);
@@ -324,18 +340,32 @@ document.getElementById("logout").addEventListener("click", function () {
 
 document.getElementById("myShifts").addEventListener("click", function () {
     const shiftTable = document.getElementById("shiftTable");
-    const search = document.getElementById("searchField")
-    if (shiftTable.style.display === "none" || shiftTable.style.display === "") {
-        shiftTable.style.display = "table";
-    } else {
-        shiftTable.style.display = "none";
+    const searchToggle = document.getElementById("searchToggle");
+    const searchField = document.getElementById("searchField");
+    if (window.innerWidth < 768) {
+        if (shiftTable.style.display === "none" || shiftTable.style.display === "") {
+            shiftTable.style.display = "table";
+            searchToggle.style.display = "flex";
+        } else {
+            shiftTable.style.display = "none";
+            searchToggle.style.display = "none";
+        }
     }
-    if (search.style.display === "none" || search.style.display === "") {
-        search.style.display = "flex";
-    } else {
-        search.style.display = "none";
+    else {
+        if (searchField.style.display === "none" || searchField.style.display === "") {
+            searchField.style.display = "flex";
+            searchToggle.style.display = "none"
+            shiftTable.style.display = "table"
+        } else {
+            searchField.style.display = "none";
+            shiftTable.style.display = "none"
+        }
     }
 });
+
+
+
+
 
 const loggedInUserEmail = localStorage.getItem("loggedInUserEmail");
 const userData = JSON.parse(localStorage.getItem("userData")) || {};
