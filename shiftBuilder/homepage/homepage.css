@@ -355,13 +355,13 @@ label {
     input,
     select,
     textarea {
-        width: 60vw;
-        height: 2vh;
+        height: 4vh;
+        width: 65vw;
     }
 
     select {
-        height: 4vh;
-        width: 65vw;
+        height: 5vh;
+        width: 70vw;
     }
 
     textarea {
