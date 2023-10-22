@@ -109,9 +109,10 @@ footer {
     box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 10px;
-    text-align: center;
+    height: 15vh;
     position: relative;
 }
+
 
 .errors {
     font-size: 15px;
@@ -238,11 +239,12 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     border-radius: 10px;
-    padding: 2%;
+    padding: 15px;
     border: none;
     background-color: #bfdbf7;
     color: #022b3a;
 }
+
 
 ::placeholder {
     color: #022b3a;
@@ -302,6 +304,7 @@ label {
 
     .search {
         width: 70vw;
+        height: 50vh;
         display: none;
         flex-direction: column;
         position: fixed;
@@ -316,8 +319,8 @@ label {
     .search-close {
         display: block;
         position: absolute;
-        top: -12%;
-        right: -2%;
+        top: -7%;
+        right: -5%;
         color: rgb(99, 99, 99);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border: 10px grey solid;
@@ -356,11 +359,13 @@ label {
     select {
         height: 3vh;
         width: 65vw;
+        padding: 5px;
     }
 
     textarea {
         height: 5vh;
         width: 65vw;
+        padding: 5px;
     }
 
     .loading-animation {
