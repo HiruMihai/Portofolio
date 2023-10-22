@@ -85,10 +85,10 @@ footer {
     text-align: center;
 }
 
-.search input {
+/* .search input {
     width: 15%;
-    height: 10px;
-}
+    height: 2vh;
+} */
 
 .search-toggle {
     display: flex;
@@ -238,7 +238,7 @@ input,
 select,
 textarea {
     width: 30vw;
-    height: 20vh;
+    height: 2vh;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -310,10 +310,6 @@ label {
         width: 40%;
     }
 
-    .search input {
-        width: 60vw;
-    }
-
     .search {
         width: 80vw;
         display: none;
@@ -367,7 +363,7 @@ label {
     select,
     textarea {
         width: 60vw;
-        height: 10vh;
+        height: 2vh;
     }
 
     .loading-animation {
