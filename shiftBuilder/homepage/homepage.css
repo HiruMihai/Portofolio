@@ -85,11 +85,6 @@ footer {
     text-align: center;
 }
 
-/* .search input {
-    width: 15%;
-    height: 2vh;
-} */
-
 .search-toggle {
     display: flex;
     justify-content: center;
@@ -243,7 +238,7 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2%;
     border: none;
     background-color: #bfdbf7;
     color: #022b3a;
@@ -251,11 +246,6 @@ textarea {
 
 ::placeholder {
     color: #022b3a;
-}
-
-input[type="date"],
-input[type="time"] {
-    padding: 10px;
 }
 
 input:hover,
@@ -311,9 +301,13 @@ label {
     }
 
     .search {
-        width: 80vw;
+        width: 70vw;
         display: none;
         flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
         margin-top: 40px;
         margin-left: 5%;
         margin-right: 5%;
@@ -348,9 +342,8 @@ label {
     .create-shift,
     .edit-shift {
         width: 70vw;
-        height: 80vh;
-        max-width: none;
-        max-height: none;
+        height: 70vh;
+        justify-content: space-between;
     }
 
     .create-shift-close,
@@ -364,6 +357,15 @@ label {
     textarea {
         width: 60vw;
         height: 2vh;
+    }
+
+    select {
+        height: 4vh;
+        width: 65vw;
+    }
+
+    textarea {
+        height: 5vh;
     }
 
     .loading-animation {
