@@ -215,10 +215,8 @@ tr button:hover {
     z-index: 9999;
 }
 
-
 .create-shift-close,
 .edit-shift-close {
-
     position: absolute;
     top: -20px;
     right: -10px;

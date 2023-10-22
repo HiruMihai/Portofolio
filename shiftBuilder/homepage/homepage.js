@@ -304,7 +304,6 @@ function toggleSearchField() {
     }
 }
 
-
 document.getElementById("searchToggle").addEventListener("click", toggleSearchField);
 document.getElementById("searchClose").addEventListener("click", toggleSearchField);
 document.getElementById("search").addEventListener("click", searchShifts);
@@ -362,10 +361,6 @@ document.getElementById("myShifts").addEventListener("click", function () {
         }
     }
 });
-
-
-
-
 
 const loggedInUserEmail = localStorage.getItem("loggedInUserEmail");
 const userData = JSON.parse(localStorage.getItem("userData")) || {};
