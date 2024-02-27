@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.expandable {
+    width: 200px;
+    height: 200px;
+    /* Set your desired fixed width */
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    /* Hide overflow content when collapsed */
+    max-height: 500px;
+    /* Set a reasonable initial max-height */
+    transition: max-height 1s ease;
+    text-align: center;
+    /* Add smooth transition to the max-height property */
+}
+
+.expandable.open {
+    max-height: 100%;
+    /* Set a value larger than the expected content height when expanded */
+}
+
+.additional-text {
+    display: none;
+}

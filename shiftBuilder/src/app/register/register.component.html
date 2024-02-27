@@ -1,0 +1,51 @@
+<h1>Register</h1>
+<div class="form">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <label for="email">Email:</label>
+      <input formControlName="email" type="email" name="email" required>
+      <div *ngIf="registerForm.get('email')?.hasError('email') && registerForm.get('email')?.touched"
+           class="error">
+        Invalid email format.
+      </div>
+  
+      <label for="password">Password:</label>
+      <input formControlName="password" type="password" name="password" required>
+      <div *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched"
+           class="error">
+        Password must be at least 6 characters long.
+      </div>
+  
+      <label for="confirmPassword">Confirm Password:</label>
+      <input formControlName="confirmPassword" type="password" name="password-confirm" required>
+      <div *ngIf="registerForm.hasError('passwordMismatch') && registerForm.get('confirmPassword')?.touched"
+           class="error">
+        Passwords do not match.
+      </div>
+  
+      <label for="firstName">First Name:</label>
+      <input formControlName="firstName" type="text" name="first-name" required>
+      <div *ngIf="registerForm.get('firstName')?.hasError('minlength') && registerForm.get('firstName')?.touched"
+           class="error">
+        First name must be at least 2 characters long.
+      </div>
+  
+      <label for="lastName">Last Name:</label>
+      <input formControlName="lastName" type="text" name="last-name" required>
+      <div *ngIf="registerForm.get('lastName')?.hasError('minlength') && registerForm.get('lastName')?.touched"
+           class="error">
+        Last name must be at least 2 characters long.
+      </div>
+  
+      <label for="birthDate">Birth Date</label>
+      <input formControlName="birthDate" type="date" name="birth-date" required>
+      <div *ngIf="registerForm.get('birthDate')?.hasError('invalidAge') && registerForm.get('birthDate')?.touched"
+           class="error">
+        Age must be between 6 and 130.
+      </div>
+  
+      <button type="submit" [disabled]="registerForm.invalid">Register</button>
+      <p (click)="goToLogin()">Already have an account? Login here!</p>
+    </form>
+    <p [class.successful]="message === 'Registration successful'" [class.error]="message === 'Registration failed'">{{ message }}</p>
+  </div>
+  

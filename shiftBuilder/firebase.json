@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "shiftbuilder",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
