@@ -1,33 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
+    background-color: #CBD0D8;
+    color: #D3AC2B;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
-.expandable {
-    width: 200px;
-    height: 200px;
-    /* Set your desired fixed width */
-    border: 1px solid #ccc;
-    padding: 10px;
+a {
+    color: #333D51;
+    text-decoration: none;
+}
+
+h3 {
     cursor: pointer;
-    overflow: hidden;
-    /* Hide overflow content when collapsed */
-    max-height: 500px;
-    /* Set a reasonable initial max-height */
-    transition: max-height 1s ease;
-    text-align: center;
-    /* Add smooth transition to the max-height property */
 }
 
-.expandable.open {
-    max-height: 100%;
-    /* Set a value larger than the expected content height when expanded */
-}
-
-.additional-text {
+p {
+    color: #F4F3EA;
+    width: 50vw;
     display: none;
+}
+
+.categories {
+    background-color: #333D51;
+    color: #D3AC2B;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+}
+
+
+.header-btn {
+    background-color: transparent;
+    border: none;
+    color: #D3AC2B;
+    font-size: 15px;
+
+}
+
+.project-btn {
+    background-color: #F4F3EA;
+    text-align: center;
+    width: 50vw;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.project-btn:hover {
+    transform: scale(1.05);
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+p,
+.project-btn {
+    display: none;
+    opacity: 0;
+    /* Add this line */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Transition for opacity and transform properties */
+}
+
+
+button {
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    /* Scale the button slightly on hover */
+    transform: scale(1.05);
 }

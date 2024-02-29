@@ -4,40 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./home.js"></script>
+    <title>Hiru Mihai Portofolio</title>
 </head>
 
 <body>
-    <h3>CSS:</h3>
-    <p><a href="./css_project/final_project.html">CSS Final Project</a></p>
-    <p><a href="./superhost_page/superhost.html">Airbnb Copy Page</a></p>
-    <h3>JS:</h3>
-    <p><a href="./toDo/toDoList.html">To Do List App</a></p>
-    <p><a href="./shiftBuilder/homepage/homepage.html">Shift Builder App</a></p>
-    <h3>Anguar:</h3>
-    <p><a href="./shiftBuilderAngular/">Shift Builder App in Angular</a></p>
+    <div class="categories">
+        <div class="category" id="category">
+
+            <button class="header-btn" id="headerBtn">
+                <h3>Angular & JavaScript:</h3>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+                <span class="material-symbols-outlined">
+                    expand_less
+                </span>
+            </button>
+
+
+            <p>The "Shift Builder" app is a solution designed to help employees track their work hours
+                across multiple jobs, manage shifts by workplace, and generate reports. It features a user-friendly
+                interface, and functionalities for user registration, login, profile
+                editing, and shift management.
+                <br> <br> While both applications offer similar functionalities for shift management, they are
+                implemented using
+                different technologies to achieve data storage and authentication. The JavaScript-based application
+                utilizes local storage for data persistence, whereas the Angular-based application leverages Firestore
+                for database management and authentication.
+            </p>
+
+            <div class="project" id="project">
+
+                <a href="./shiftBuilderAngular/"><button class="project-btn" id="project-btn">Shift Builder App in
+                        Angular</button></a>
+
+            </div>
+            <div class="project" id="project">
+                <a href="./shiftBuilder/homepage/homepage.html"><button class="project-btn" id="project-btn">Shift
+                        Builder App in JavaScript</button></a>
+            </div>
+        </div>
+
+        <div class="category">
+
+            <button class="header-btn" id="headerBtn">
+                <h3>Responsive CSS:</h3>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+                <span class="material-symbols-outlined">
+                    expand_less
+                </span>
+            </button>
+
+            <p>
+                Within the domain of responsive CSS design, I've developed two standout projects. The first mirrors the
+                layout and functionality of an Airbnb page, showcasing my attention to detail and adaptability across
+                screen sizes. <br> <br> The second is an original creation from my CSS module at New Tech Academy,
+                highlighting my
+                mastery of responsive design principles.</p>
+
+            <div class="project" id="project">
+                <a href="./superhost_page/superhost.html"><button class="project-btn" id="project-btn">Airbnb Copy
+                        Page</button></a>
+            </div>
+
+            <div class="project" id="project">
+                <a href="./css_project/final_project.html"><button class="project-btn" id="project-btn">CSS Final
+                        Project</button></a>
+            </div>
+
+        </div>
+
+        <div class="category">
+
+            <button class="header-btn" id="headerBtn">
+                <h3>Others</h3>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+                <span class="material-symbols-outlined">
+                    expand_less
+                </span>
+            </button>
+
+            <p>This is my first project.</p>
+
+            <div class="project" id="project">
+                <a href="./toDo/toDoList.html"><button class="project-btn" id="project-btn">To Do List App in
+                        JavaScript</button></a>
+            </div>
+        </div>
+
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./home.css">
-    <script src="./home.js"></script>
-    <title>Expandable Div</title>
-</head>
-
-<body>
-    <div class="expandable" onclick="toggleText()">
-        <p class="initial-text">Click to expand</p>
-        <p class="additional-text">This is additional text that will be revealed when the div is clicked. You can add
-            more content here.</p>
-    </div>
-    <script src="script.js"></script>
-</body>
-
-</html> -->
