@@ -1,0 +1,24 @@
+<h1>Login</h1>
+<div class="form">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="email">Email:</label>
+    <input formControlName="email" type="email" name="email" required>
+    <div *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched"
+         class="error">
+      Invalid email format.
+    </div>
+
+    <label for="password">Password:</label>
+    <input formControlName="password" type="password" name="password" required>
+    <div *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched"
+         class="error">
+      Password must be at least 6 characters long.
+    </div>
+
+    <button type="submit">Login</button>
+    <p (click)="goToRegister()">Don't have an account? Register here!</p>
+  </form>
+  <p [class.successful]="message === 'Authentication successful'" [class.error]="message === 'Authentication failed'">
+    {{ message }}
+  </p>
+</div>

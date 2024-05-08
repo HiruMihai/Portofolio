@@ -1,0 +1,62 @@
+<h1>Profile</h1>
+<div *ngIf="!changePasswordMode && currentUser" class="form">
+    <form [formGroup]="profileForm">
+        <label>Email:</label>
+        <input type="text" formControlName="email" />
+        <div *ngIf="profileForm.get('email')?.invalid && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+            class="error">
+            Email must be in a valid format.
+        </div>
+
+        <label>First Name:</label>
+        <input type="text" formControlName="firstName" />
+        <div *ngIf="profileForm.get('firstName')?.invalid && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
+            class="error">
+            First Name must have at least 2 characters.
+        </div>
+
+        <label>Last Name:</label>
+        <input type="text" formControlName="lastName" />
+        <div *ngIf="profileForm.get('lastName')?.invalid && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
+            class="error">
+            Last Name must have at least 2 characters.
+        </div>
+
+        <label>Birth Date:</label>
+        <input type="date" formControlName="birthDate" />
+        <div *ngIf="profileForm.get('birthDate')?.invalid && (profileForm.get('birthDate')?.dirty || profileForm.get('birthDate')?.touched)"
+            class="error">
+            Age must be between 6 and 130.
+        </div>
+
+        <button type="button" (click)="onUpdate()">Update</button>
+        <button type="button" (click)="onDelete()">Delete</button>
+        <p (click)="toggleChangePasswordMode()">Change password</p>
+    </form>
+    <div *ngIf="message" [ngClass]="{'successful': message.includes('successfully')}">{{ message }}</div>
+</div>
+
+<div *ngIf="changePasswordMode" class="form">
+    <form [formGroup]="passwordForm">
+        <label>Old Password:</label>
+        <input type="password" formControlName="oldPassword" />
+        <div *ngIf="passwordForm.get('oldPassword')?.invalid && passwordForm.get('oldPassword')?.dirty" class="error">
+            Old Password is incorrect.
+        </div>
+
+        <div *ngIf="message && message.includes('Old password is incorrect')" class="error">
+            {{ message }}
+        </div>
+
+        <label>New Password:</label>
+        <input type="password" formControlName="newPassword" />
+        <div *ngIf="passwordForm.get('newPassword')?.invalid && passwordForm.get('newPassword')?.dirty" class="error">
+            New Password must be at least 6 characters long.
+        </div>
+
+        <button type="button" (click)="onChangePassword()">Update</button>
+        <button type="button" (click)="toggleChangePasswordMode()">Cancel</button>
+    </form>
+    <div *ngIf="message && !message.includes('Old password is incorrect')"
+        [ngClass]="{'successful': message.includes('successfully')}">{{ message }}</div>
+</div>

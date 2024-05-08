@@ -1,0 +1,64 @@
+<h1>Shifts</h1>
+<div class="search" [formGroup]="searchForm">
+
+    <label for="workplace">Workplace:</label>
+    <select formControlName="workplace" name="workplace" required>
+        <option value="any">Any</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <label for="start">Start date:</label>
+    <input formControlName="start" type="date" name="start" required>
+
+    <label for="end">End date:</label>
+    <input formControlName="end" type="date" name="end" required>
+
+    <button type="button" (click)="filterShifts()">Search</button>
+    <button type="button" (click)="clearSearch()">Clear</button>
+</div>
+
+
+
+<div class="table">
+
+    <table class="shift-table" id="shiftTable">
+        <thead>
+            <tr class="table-header">
+                <th>Date</th>
+                <th>Start time</th>
+                <th>End time</th>
+                <th>Hourly wage</th>
+                <th>Workplace</th>
+                <th>Profit</th>
+            </tr>
+        </thead>
+        <tbody id="shiftTableBody">
+            <tr *ngFor="let shift of shifts" class="shifts">
+                <td class="mobile">Date</td>
+                <td>{{ shift.Date }}</td>
+                <td class="mobile">Start time</td>
+                <td>{{ shift.start }}</td>
+                <td class="mobile">End time</td>
+                <td>{{ shift.end }}</td>
+                <td class="mobile">Hourly wage</td>
+                <td>{{ shift.wage }}</td>
+                <td class="mobile">Workplace</td>
+                <td>{{ shift.workplace }}</td>
+                <td class="mobile">Profit</td>
+                <td>{{ shift.profit }}</td>
+                <td class="btn">
+                    <button (click)="editShift(shift)">Edit</button>
+                    <button (click)="deleteShift(shift)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="best-month" class="display-month">
+                <th>Best Month</th>
+                <th colspan="2" id="bestMonth">{{ bestMonth }}</th>
+                <th colspan="3" id="bestMonthProfit">{{ bestMonthProfit }}</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

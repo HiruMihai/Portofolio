@@ -1,0 +1,21 @@
+<div *ngIf="isNavbarVisible">
+    <ul class="navbar">
+
+        <div class="left">
+            <li routerLink="/home" routerLinkActive="active">Home</li>
+            <li routerLink="/shifts" routerLinkActive="active">My Shifts</li>
+            <li routerLink="/addshift" routerLinkActive="active">Add Shift</li>
+        </div>
+        <div class="right">
+            <p></p>
+            <li routerLink="/profile" routerLinkActive="active">Hello {{ userName }}</li>
+            <ng-container *ngIf="!isLoggedIn; else loggedIn">
+                <li routerLink="/login" routerLinkActive="active">Login</li>
+            </ng-container>
+            <ng-template #loggedIn>
+
+                <li (click)="logout()">Log Out</li>
+            </ng-template>
+        </div>
+    </ul>
+</div>
