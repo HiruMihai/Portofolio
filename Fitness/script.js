@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     function handleScrollAnimations() {
         let windowHeight = $(window).height();
