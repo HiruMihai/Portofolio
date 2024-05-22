@@ -3,10 +3,11 @@
 html {
     width: 100vw;
     overflow-x: hidden !important;
-    background-color: #C7C8CA;
+
 }
 
 body {
+    background-color: #C7C8CA;
     overflow-x: hidden;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -382,6 +383,7 @@ li {
 footer {
     background-color: #C7C8CA;
     color: black;
+    height: 100%;
 }
 
 footer p,
