@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    position: relative;
     background-color: #C7C8CA;
     width: 100%;
 
