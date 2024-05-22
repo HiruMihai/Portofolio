@@ -1,16 +1,15 @@
 /* Others */
 
 html {
-    overflow-x: hidden !important;
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
-    position: relative;
-    overflow-x: hidden;
     background-color: #C7C8CA;
     width: 100%;
-
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .skew {
