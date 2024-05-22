@@ -4,7 +4,7 @@ $(document).ready(function () {
         let windowHeight = $(window).height();
         let scrollTop = $(window).scrollTop();
 
-        $('.contact-text, .contact-buttons, .contact-details, .contact-image, .contact-info, .basic-plan, .standard-plan, .premium-plan, .left-column, .right-column, .text-plans').each(function () {
+        $('.contact-text, .contact-buttons, .contact-details, .contact-image, .contact-info, .basic-plan, .standard-plan, .premium-plan, .left-column, .right-column, .text-plans, .trimite').each(function () {
             let elementOffset = $(this).offset().top;
             let distanceFromBottom = elementOffset - scrollTop - windowHeight;
 
