@@ -7,6 +7,7 @@ html {
 
 body {
     position: relative;
+    overflow-x: hidden;
     background-color: #C7C8CA;
     width: 100%;
 
