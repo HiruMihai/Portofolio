@@ -1,8 +1,11 @@
 /* Others */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #C7C8CA;
-    overflow-x: hidden;
     width: 100%;
 
 }
