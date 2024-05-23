@@ -8,7 +8,7 @@ $(document).ready(function () {
             let elementOffset = $(this).offset().top;
             let distanceFromBottom = elementOffset - scrollTop - windowHeight;
 
-            let delay = 200;
+            let delay = 150;
             if (distanceFromBottom < -delay && !$(this).hasClass('animate__animated')) {
                 $(this).addClass('animate__animated animate__bounceInLeft');
                 $(this).css('opacity', '1');
