@@ -140,13 +140,18 @@ button.white-red-btn:hover {
 }
 
 .white-btn-sm {
+    background: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
     color: white;
+    transition: background-position 0.3s ease, color 0.3s ease;
+    border: none;
     border-left: 4px solid black;
 }
 
 .white-btn-sm:hover {
+    background-position: left bottom;
     color: white;
-    border-left: 4px solid black;
 }
 
 .contact {
