@@ -3,7 +3,6 @@
 html {
     width: 100vw;
     overflow-x: hidden !important;
-    background-color: #C7C8CA;
 }
 
 body {
@@ -161,6 +160,11 @@ button.white-red-btn:hover {
 
 .contact-details {
     color: white;
+}
+
+.video-sm {
+    width: 110%;
+    margin-left: -5%;
 }
 
 ul {
