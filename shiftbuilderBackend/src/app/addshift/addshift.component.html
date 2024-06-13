@@ -1,0 +1,35 @@
+<div>
+    <h1>Add Shift</h1>
+</div>
+
+<div class="form">
+    <form [formGroup]="shiftForm" (ngSubmit)="onSubmit()">
+        <label for="date">Date</label>
+        <input formControlName="date" type="date" name="date" required>
+
+        <label for="start">Start time:</label>
+        <input formControlName="start" type="time" name="start" required>
+
+        <label for="end">End time:</label>
+        <input formControlName="end" type="time" name="end" required>
+
+        <label for="wage">Hourly wage:</label>
+        <input formControlName="wage" type="number" name="wage" required>
+
+        <label for="workplace">Workplace:</label>
+        <select formControlName="workplace" name="workplace" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <label for="name">Shift name:</label>
+        <input formControlName="name" type="text" name="name" required>
+
+        <label for="comments">Comments:</label>
+        <input formControlName="comments" type="text" name="comments" required>
+
+        <button type="submit">Save</button>
+        <p [ngClass]="{'successful': successClass}">{{ message }}</p>
+    </form>
+</div>
