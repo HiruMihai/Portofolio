@@ -1,8 +1,0 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
