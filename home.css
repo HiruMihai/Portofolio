@@ -90,3 +90,52 @@ button:hover {
     /* Scale the button slightly on hover */
     transform: scale(1.05);
 }
+
+.profile-pic {
+    height: 150px;
+    margin-bottom: 3%;
+    margin-top: 1%;
+
+}
+
+h4 {
+    color: white;
+    font-size: 15px;
+    margin: 2% 10% 2% 10%;
+    text-align: center;
+}
+
+.certifications {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+}
+
+.certificate {
+    width: 70%;
+    height: 70%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificate:hover {
+    transform: scale(1.4);
+}
+
+.certificate-div {
+    width: 100%;
+    margin: 5%;
+}
+
+h5 {
+    margin-top: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    margin: 5%;
+}
+
+h6 {
+    font-size: 14px;
+}
