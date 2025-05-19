@@ -25,15 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (e) {
       e.preventDefault();
 
-      // Update active class
       navLinks.forEach((nav) => nav.classList.remove("active"));
       this.classList.add("active");
 
-      // Get the selected category
       const selected = this.id;
       const visibleIds = filterMap[selected] || [];
 
-      // Toggle visibility
       for (const [id, element] of Object.entries(allItems)) {
         if (visibleIds.includes(id)) {
           element.classList.remove("d-none");

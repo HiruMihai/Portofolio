@@ -1,7 +1,7 @@
 document
   .getElementById("contact-form")
   .addEventListener("submit", async function (e) {
-    e.preventDefault(); // Stop the form from redirecting
+    e.preventDefault();
 
     const form = e.target;
     const statusDiv = form.querySelector(".status");
