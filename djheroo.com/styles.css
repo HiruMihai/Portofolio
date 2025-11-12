@@ -37,10 +37,7 @@ p {
 
 .item {
   background-color: lightgrey;
-  width: 90vw;
-  max-width: 700px;
-  margin: auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .item:hover {
