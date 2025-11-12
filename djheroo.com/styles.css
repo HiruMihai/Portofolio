@@ -20,7 +20,8 @@ p {
 }
 
 .profile {
-  width: 150px;
+  width: 25vw;
+  max-width: 150px;
 }
 
 .donate {
@@ -31,7 +32,8 @@ p {
 
 .icon {
   filter: invert(1);
-  width: 50px;
+  width: 10vw;
+  max-width: 50px;
   background-color: lightgrey;
 }
 
