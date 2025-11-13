@@ -1,16 +1,57 @@
+html,
 body {
-  font-family: 'Bebas Neue', sans-serif !important;
+  background-color: black !important;
 }
 
-.item {
-  background-color: grey;
+body {
+  font-family: "Bebas Neue", sans-serif !important;
+}
+
+h1 {
+  color: white !important;
+}
+
+h2 {
+  color: darkgray !important;
+}
+
+p {
+  color: black !important;
+}
+
+.profile {
+  width: 150px;
+  height: auto;
+}
+
+.donate {
+  filter: invert(1);
+  width: 40px;
+  opacity: 40%;
+  transition: transform 0.2s ease;
+}
+
+.donate:hover {
+  transform: scale(1.3);
   cursor: pointer;
 }
 
 .icon {
-  width: 5vw; /* 5% of viewport width */
-  height: auto; /* keeps aspect ratio */
-  max-width: 60px; /* optional max size */
-  min-width: 40px; /* optional min size */
+  filter: invert(1);
+  width: 50px;
+  background-color: lightgrey;
 }
 
+.item {
+  background-color: lightgrey;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.item:active {
+  background-color: grey;
+}
