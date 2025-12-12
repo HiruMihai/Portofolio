@@ -42,6 +42,11 @@ p {
   background-color: lightgrey;
 }
 
+.icon-new {
+  width: 50px;
+  background-color: red;
+}
+
 .item {
   background-color: lightgrey;
   transition: transform 0.2s ease;
