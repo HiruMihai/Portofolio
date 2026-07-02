@@ -22,24 +22,32 @@ p {
 .profile {
   width: 150px;
   height: auto;
+  transition: transform 0.2s ease;
 }
 
-.donate {
+.profile:hover {
+  transform: scale(1.05);
+}
+
+.mail {
   filter: invert(1);
   width: 40px;
   opacity: 40%;
   transition: transform 0.2s ease;
 }
 
-.donate:hover {
+.mail:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
 
 .icon {
   filter: invert(1);
-  width: 50px;
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
   background-color: lightgrey;
+  transition: transform 0.2s ease;
 }
 
 .icon-new {
@@ -47,16 +55,59 @@ p {
   background-color: red;
 }
 
-.item {
+.item,
+.item-pl {
   background-color: lightgrey;
   transition: transform 0.2s ease;
 }
 
 .item:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.playlist {
+  transition: transform 0.2s ease;
+}
+
+.playlist:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .item:active {
   background-color: grey;
+}
+
+.outside {
+  color: white !important;
+}
+
+/* -- */
+
+.item .icon-up {
+  display: none !important;
+}
+
+.item[aria-expanded="true"] .icon-down {
+  display: none !important;
+}
+
+.item[aria-expanded="true"] .icon-up {
+  display: inline-block !important;
+}
+
+.collapsing {
+  height: auto !important;
+  overflow: hidden;
+  transition: opacity 0.4s ease !important;
+}
+
+.item[aria-expanded="true"] + .collapsing .item-pl,
+.collapse.show .item-pl {
+  animation: bounceIn 0.4s ease-out both;
+}
+
+.item[aria-expanded="false"] + .collapsing .item-pl {
+  animation: bounceOut 0.2s ease-in both;
 }
