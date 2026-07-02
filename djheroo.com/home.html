@@ -25,36 +25,11 @@
         <!-- Main Content Area -->
         <div class="container px-xl-5">
 
-            <!-- Mixes Item -->
-            <div class="item rounded-5 mt-4 px-3 py-2 mx-auto col-12 col-lg-6"
-                onclick="window.open('https://mixcloud.com/djheroo/', '_blank')">
-                <div class="d-flex align-items-center justify-content-between">
-                    <img class="icon p-2 rounded-circle" src="./mixcloud.svg" alt="Mixcloud" />
-                    <p class="fs-4 mb-0 text-center mx-auto">Mixes</p>
-                </div>
-            </div>
 
-            <!-- Instagram Item -->
-            <div class="item rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6"
-                onclick="window.open('https://instagram.com/djheroo/', '_blank')">
-                <div class="d-flex align-items-center justify-content-between">
-                    <img class="icon p-2 rounded-circle" src="./instagram.svg" alt="Instagram" />
-                    <p class="fs-4 mb-0 text-center mx-auto">Instagram</p>
-                </div>
-            </div>
-
-            <!-- Facebook Item -->
-            <div class="item rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6"
-                onclick="window.open('https://www.facebook.com/DjHerooOfficial/', '_blank')">
-                <div class="d-flex align-items-center justify-content-between">
-                    <img class="icon p-2 rounded-circle" src="./facebook.svg" alt="Facebook" />
-                    <p class="fs-4 mb-0 text-center mx-auto">Facebook</p>
-                </div>
-            </div>
 
             <!-- MOBILE ONLY: Static Playlists View -->
-            <p class="d-block d-md-none outside fs-4 text-center mt-4">Playlists</p>
-            <div class="item-pl d-block d-md-none rounded-5 mt-3 mb-4 px-1 mx-auto col-12 col-lg-6">
+            <p class="d-block d-md-none outside fs-4 text-center mt-3">Playlists</p>
+            <div class="item-pl d-block d-md-none rounded-5 mt-3 mb-3 px-1 mx-auto col-12 col-lg-6">
                 <div
                     class="row text-center g-1 py-3 py-lg-2 justify-content-md-between justify-content-evenly px-1 px-md-4">
                     <div onclick="window.open('https://open.spotify.com/user/31cdnqrb67ukkbvxmzczqew4uhxu?si=b38ee0c6f74545e0', '_blank')"
@@ -88,7 +63,7 @@
 
             <!-- DESKTOP ONLY: Collapse Container -->
             <div class="collapse" id="playlistsMenu">
-                <div class="item-pl rounded-5 mt-3 px-1 mb-4 mb-xl-5 mx-auto col-12 col-lg-6">
+                <div class="item-pl rounded-5 mt-3 px-1 mx-auto col-12 col-lg-6">
                     <div
                         class="row d-none d-md-flex text-center g-1 py-2 justify-content-xl-between justify-content-evenly px-1 px-lg-4">
                         <div onclick="window.open('https://open.spotify.com/user/31cdnqrb67ukkbvxmzczqew4uhxu?si=b38ee0c6f74545e0', '_blank')"
@@ -110,11 +85,40 @@
                 </div>
             </div>
 
+            <!-- Mixes Item -->
+            <div class="item rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6"
+                onclick="window.open('https://mixcloud.com/djheroo/', '_blank')">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="icon p-2 rounded-circle" src="./mixcloud.svg" alt="Mixcloud" />
+                    <p class="fs-4 mb-0 text-center mx-auto">Mixes</p>
+                </div>
+            </div>
+
+            <!-- Instagram Item -->
+            <div class="item rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6"
+                onclick="window.open('https://instagram.com/djheroo/', '_blank')">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="icon p-2 rounded-circle" src="./instagram.svg" alt="Instagram" />
+                    <p class="fs-4 mb-0 text-center mx-auto">Instagram</p>
+                </div>
+            </div>
+
+            <!-- Facebook Item -->
+            <div class="item rounded-5 mt-3 mb-4 px-3 py-2 mx-auto col-12 col-lg-6"
+                onclick="window.open('https://www.facebook.com/DjHerooOfficial/', '_blank')">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="icon p-2 rounded-circle" src="./facebook.svg" alt="Facebook" />
+                    <p class="fs-4 mb-0 text-center mx-auto">Facebook</p>
+                </div>
+            </div>
+
+
+
         </div>
 
     </div>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // Listen for when the playlists menu starts to open
         document.getElementById('playlistsMenu').addEventListener('show.bs.collapse', function () {
             // Smoothly scroll to the absolute bottom of the page
@@ -125,7 +129,7 @@
                 });
             }, 100); // A tiny 100ms delay ensures the content is rendered before calculating the final page height
         });
-    </script>
+    </script> -->
 
     <!-- Analytics Scripts -->
     <script type="text/javascript">
