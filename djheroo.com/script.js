@@ -17,7 +17,9 @@ document.querySelectorAll(".item").forEach((item) => {
     item.classList.remove(
       "animate__animated",
       "animate__bounceInRight",
-      "animate__faster",
+      "animate__BounceInLeft",
+      "animate__BounceInDown",
+      "animate__BounceInUp",
     );
   });
 });

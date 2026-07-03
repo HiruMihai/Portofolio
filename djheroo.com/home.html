@@ -90,14 +90,14 @@
                 </div>
             </div>
 
-            <!-- DESKTOP ONLY: Collapsible Playlists Button (Fixed Parent Positioning) -->
+            <!-- DESKTOP ONLY: Collapsible Playlists Button -->
             <div class="item d-none d-md-block rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6 animate__animated animate__bounceInLeft"
                 data-bs-toggle="collapse" data-bs-target="#playlistsMenu" aria-expanded="false"
                 aria-controls="playlistsMenu" style="cursor: pointer;">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="icon-wrapper p-2 rounded-circle d-flex align-items-center justify-content-center">
-                        <img class="icon icon-down" src="./down.svg" alt="Expand" />
-                        <img class="icon icon-up" src="./up.svg" alt="Collapse" />
+                        <!-- Keep only the down arrow -->
+                        <img class="icon arrow-toggle" src="./down.svg" alt="Expand/Collapse" />
                     </div>
 
                     <p class="fs-4 mb-0 text-center mx-auto">Playlists</p>

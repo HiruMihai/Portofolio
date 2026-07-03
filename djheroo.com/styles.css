@@ -22,11 +22,6 @@ p {
 .profile {
   width: 150px;
   height: auto;
-  transition: transform 0.2s ease;
-}
-
-.profile:hover {
-  transform: scale(1.05);
 }
 
 .mail {
@@ -111,9 +106,20 @@ p {
 
 .item[aria-expanded="true"] + .collapsing .item-pl,
 .collapse.show .item-pl {
-  animation: bounceIn 0.4s ease-out both;
+  animation: backInDown 0.4s ease-out both;
 }
 
 .item[aria-expanded="false"] + .collapsing .item-pl {
-  animation: bounceOut 0.2s ease-in both;
+  animation: backOutUp 0.3s ease-in both;
+}
+
+/* Remove or replace your old arrow display rules with this: */
+
+.arrow-toggle {
+  transition: transform 0.3s ease !important; /* Controls the speed and smoothness */
+}
+
+/* When Bootstrap sets aria-expanded="true", rotate the arrow upside down */
+.item[aria-expanded="true"] .arrow-toggle {
+  transform: rotate(180deg);
 }
