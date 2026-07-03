@@ -41,13 +41,19 @@ p {
   cursor: pointer;
 }
 
-.icon {
+.icon-wrapper {
   filter: invert(1);
   height: 55px;
   width: 55px;
   object-fit: contain;
   background-color: lightgrey;
   transition: transform 0.2s ease;
+}
+
+.icon {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
 .icon-new {
@@ -58,11 +64,11 @@ p {
 .item,
 .item-pl {
   background-color: lightgrey;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease !important;
 }
 
 .item:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) !important;
   cursor: pointer;
 }
 
