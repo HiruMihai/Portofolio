@@ -15,6 +15,10 @@ h2 {
   color: darkgray !important;
 }
 
+.secondary{
+  color: #333 !important;
+}
+
 p {
   color: black !important;
 }
