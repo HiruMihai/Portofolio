@@ -49,6 +49,15 @@ p {
   transition: transform 0.2s ease;
 }
 
+.icon-wrapper-normal {
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
+  background-color: lightgrey;
+  transition: transform 0.2s ease;
+}
+
+
 .icon {
   width: 90%;
   height: 90%;

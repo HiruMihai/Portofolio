@@ -14,9 +14,9 @@
 
 <body>
 
-    <div class="container px-xl-5">
+    <div class="container px-xl-5 mb-5 mt-3">
 
-        <header class="container mt-3 d-flex flex-column align-items-center justify-content-center">
+        <header class="container d-flex flex-column align-items-center justify-content-center">
             <img class="profile rounded-circle animate__animated animate__bounceInDown" src="./poza.jpg" alt="" />
             <h1 class="mt-3 fs-1 animate__animated animate__bounceInUp">djheroo.com</h1>
             <h2 class="fs-5 mt-1 mb-4 text-center animate__animated animate__bounceInDown">Resident DJ at Urban Home
@@ -26,8 +26,21 @@
         <!-- Main Content Area -->
         <div class="container px-xl-5">
 
+            <div id="liveNow"
+                class="item rounded-5 mt-3 px-3 py-2 mx-auto col-12 col-lg-6 animate__animated animate__bounceInLeft"
+                onclick="window.open('https://www.mixcloud.com/djheroo/', '_blank')">
+                <div class="d-flex align-items-center">
+                    <div class="icon-wrapper-normal rounded-circle d-flex align-items-center justify-content-center">
+                        <img class="icon" src="./live.svg" alt="Instagram" />
+                    </div>
+                    <p
+                        class="fs-4 mb-0 text-center mx-auto animate__animated animate__tada animate__repeat animate__infinite">
+                        Live Now</p>
+                </div>
+            </div>
+
             <!-- Mixes Item -->
-            <div class="item rounded-5 mt-3 px-3 mx-auto col-12 col-lg-6 animate__animated animate__bounceInRight "
+            <div class="item rounded-5 mt-3 px-3 mx-auto col-12 col-lg-6 animate__animated animate__bounceInRight"
                 onclick="window.open('https://mixcloud.com/djheroo/', '_blank')">
                 <div class="d-flex align-items-center">
                     <div class="icon-wrapper p-2 rounded-circle d-flex align-items-center justify-content-center">
@@ -103,7 +116,6 @@
                         <!-- Keep only the down arrow -->
                         <img class="icon arrow-toggle" src="./down.svg" alt="Expand/Collapse" />
                     </div>
-
                     <p class="fs-4 mb-0 text-center mx-auto">Playlists</p>
                 </div>
             </div>

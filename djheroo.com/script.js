@@ -23,3 +23,21 @@ document.querySelectorAll(".item").forEach((item) => {
     );
   });
 });
+
+const liveNow = document.getElementById("liveNow");
+function updateLiveBanner() {
+  const now = new Date();
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Bucharest",
+    weekday: "short",
+    hour: "numeric",
+    hour12: false,
+  }).formatToParts(now);
+  const weekday = parts.find((p) => p.type === "weekday").value;
+  const hour = parseInt(parts.find((p) => p.type === "hour").value, 10);
+  const isVisible =
+    (weekday === "Sat" && hour >= 23) || (weekday === "Sun" && hour < 4);
+  liveNow.style.display = isVisible ? "block" : "none";
+}
+updateLiveBanner();
+setInterval(updateLiveBanner, 60000);
