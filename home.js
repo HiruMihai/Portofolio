@@ -9,3 +9,4 @@ document.addEventListener("click", function (event) {
     new bootstrap.Collapse(navbar).hide();
   }
 });
+
