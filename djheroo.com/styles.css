@@ -15,7 +15,7 @@ h2 {
   color: darkgray !important;
 }
 
-.secondary{
+.secondary {
   color: #333 !important;
 }
 
@@ -52,17 +52,22 @@ p {
 .icon-wrapper-normal {
   height: 55px;
   width: 55px;
-  object-fit: contain;
-  background-color: lightgrey;
+  object-fit: fill;
+  background-color: #212529;
   transition: transform 0.2s ease;
 }
-
 
 .icon {
   width: 90%;
   height: 90%;
   object-fit: contain;
 }
+
+/* .icon-nook {
+  width: 99%;
+  height: 99%;
+  filter: invert(1);
+} */
 
 .icon-new {
   width: 50px;
