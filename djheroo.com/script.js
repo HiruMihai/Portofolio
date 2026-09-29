@@ -36,7 +36,7 @@ document.querySelectorAll(".item").forEach((item) => {
 //   const weekday = parts.find((p) => p.type === "weekday").value;
 //   const hour = parseInt(parts.find((p) => p.type === "hour").value, 10);
 //   const isVisible =
-//     (weekday === "Sat" && hour >= 23) || (weekday === "Sun" && hour < 4);
+//     (weekday === "Sat" && hour >= 18) || (weekday === "Sun" && hour < 5);
 //   liveNow.style.display = isVisible ? "block" : "none";
 // }
 // updateLiveBanner();
